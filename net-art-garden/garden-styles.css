@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'herb';
+    src: url(fonts/Hershey-Noailles-herbier.otf);
+}
+
+h1 {
+    font-family: 'herb';  
+    font-size: 150px;
+    place-self:center;
+    color:red;
+    margin-top:300px;
+}
+
+body{
+    background-color:yellowgreen;
+
+}
+
+img{
+    width: 100px;
+}
+
+img:hover{
+    width:120px;
+}
+
+.flex-container{
+    display:flex;  
+ justify-content:center;
+ flex-wrap: wrap;
+ top:-10px;
+ position:absolute;
+  }
+
+  .flex-item{
+    margin:30px;
+  }
+
+
