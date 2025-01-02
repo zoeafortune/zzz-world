@@ -1,0 +1,30 @@
+body{
+    color:white;
+    margin:0;
+}
+
+#html-body{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.offer{
+    border: 1px solid white;
+    position:absolute;
+    width:400px;
+    height:400px;
+    left:900px;
+    top:500px;
+    padding:20px;
+}
+
+#turtle{
+    display: none;
+    z-index:2;
+}
+
+#turtlebird{
+    display: none;
+    z-index:2;
+}
