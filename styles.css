@@ -31,9 +31,10 @@
     background-color: cornflowerblue;
     color: white;
     padding: 50px;
+    position: relative;
     width:70%;
+    height: 100%;
  }
-
 
 
  h4{
@@ -41,19 +42,6 @@
     font-size: 20;
  }
 
- #mySketch {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.dragme{
-    position:relative;
-    cursor: move;
-    z-index: 1;
-    color: white;
-    font-family: 'lunch';
-}
 
 
  a{
@@ -86,102 +74,32 @@
     opacity:50%;
 }
 
-#javascript_sample_1 {
- 
-    color:blue;
-
-}
-
-#javascript_sample_1:hover{
- 
-    color:rgb(224, 254, 106);
-}
-
-#javascript_sample_conditionals {
-   
-    color:darkgreen;
-
-}
-
-#javascript_sample_conditionals:hover{
-
-    color:rgb(85, 0, 255);}
- 
-
-#javascript_sample_loops {
-
-    color:rgb(254, 252, 106);
-
-}
-
-#javascript_sample_loops:hover{
-  
-    color:rgb(35, 251, 255);
-}
-
-#javascript_sample_arrays {
-   
-    color:rgb(202, 106, 254);
-  
-}
-
-
-#javascript_sample_arrays:hover{
- 
-    color:rgb(235, 255, 184);
-}
 
 
 .container{
     display:flex;
     justify-content:center;
     align-items:center;
-    height: 300px;
-
 }
 
 .flex-item{    
 border: yellow 2px solid;
-margin:auto;
+margin:10px;
 padding:20px;
-width:auto;
+width:100%;
+height:100%;
 
 }
 
-
-.grid-container{
-  display:grid;  
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  width:300px;
-}
-
-.grid-item{
-    background:black;
-    height: 100px;
-    width: 100px;
-    margin:10px;
-    padding:40px;
-}
 
 @media only screen and (max-width: 600px) {
     body {
             background-color: lightblue;
+            
+         }
+
+         .container{
+            flex-direction:column;
          }
     }
 
-
-    #clicked{
-      padding:40;
-        text-decoration: underline;
-        left:100%;
-    }
-
-    #clicked:hover{
-        color:blue;
-    }
-
- 
-    #appear{
-        display: none;
-    }

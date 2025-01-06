@@ -1,0 +1,97 @@
+
+@font-face {
+    font-family:'manifold' ;
+    src: url(fonts/ManifontGroteskBookDot.otf);
+}
+
+@font-face {
+    font-family: 'lunch';
+    src: url(fonts/Lunchtype22-Regular.ttf);
+}
+
+
+ 
+ body {
+    font-family: 'manifold';
+    font-size: 64px;
+    color:white;
+  margin: 0;
+  padding: 0;
+
+  height: 100%;  
+ }
+
+
+ h2{
+    font-family:'lunch';
+    font-size: 20;
+ }
+
+ #mySketch {
+ margin:50px;
+    height: 100%;
+}
+
+.dragme{
+    position:absolute;
+    cursor: grab;
+    z-index: 1;
+    color: white;
+    font-family: 'lunch';
+}
+
+
+ a{
+    font-size: 24;
+    color: white;
+    text-decoration:none;
+    font-family: 'lunch';
+ }
+
+
+ a:hover{
+    background:rgb(221, 255, 0);
+    text-decoration: none;
+    color:rgb(224, 254, 106);
+ }
+
+
+
+.grid-container{
+  display:grid;  
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width:300px;
+  margin:auto;
+}
+
+.grid-item{
+    background:black;
+    height: 100px;
+    width: 100px;
+    margin:20px;
+    padding:40px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+            background-color: lightblue;
+         }
+    }
+
+
+    #clicked{
+      padding:40;
+        text-decoration: underline;
+        left:100%;
+        color:white;
+    }
+
+    #clicked:hover{
+        color:blue;
+    }
+
+ 
+    #appear{
+        display: none;
+    }
